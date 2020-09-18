@@ -1037,11 +1037,15 @@ main {
             background-size: 120%;
         }
 
+        @media screen and (max-width: 2559px) {
+            background: none
+        }
+
         @media screen and (max-width: 1800px) {
             background: none
         }
 
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1199px) {
             background: url('../img/about-bg-line.png') center left -840px no-repeat;
         }
 
@@ -1228,6 +1232,7 @@ main {
             // border-radius: 20px;
             // border: 5px solid #fff;
             position: relative;
+            // z-index: 5;
 
             box-shadow: 0 11px 65px rgba(20, 34, 143, 0.13);
             border-radius: 10px;
@@ -1235,7 +1240,7 @@ main {
 
             img {
                 border-radius: 10px;
-                z-index: 1;
+                z-index: -2;
             }
         }
 
