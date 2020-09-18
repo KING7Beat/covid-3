@@ -137,4 +137,4 @@ prevBtn.addEventListener('click', ()=>{
         nextBtn.classList.remove('section-reviews-slider_disabled');
     }
     swiper.slidePrev();
-})
+});
