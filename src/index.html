@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+
+<body>
+    <header class="section-header">
+        <div class="container px-lg-0">
+            <nav class="section-header-nav d-flex flex-row justify-content-between">
+                <div
+                    class="section-header-logo align-items-xl-center d-flex flex-column flex-xl-row justify-content-xl-between">
+                    <div>
+                        <img data-src="./img/logo.png" class="lazy" alt="logo">
+                    </div>
+                    <p class="section-header_info mb-0"><span class="w-lg-75 d-block">Служба вызова мобильной
+                            медсестры</span></p>
+                </div>
+                <div class="menu-btn d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+                    <div class="menu-btn_img"><img src="./img/menu.png" class="lazy" alt="menu"></div>
+                    <p class="mb-0 menu-btn_text">Меню</p>
+                </div>
+                <div class="section-header_phone d-none d-lg-flex flex-column justify-content-around">
+                    <p class="mb-0"><span><a href="tel:+88005555535">8 (800) 555 55 35</a></span></p>
+                    <p class="mb-0">Бесплатный звонок. c 8:00 до 22:00</p>
+                </div>
+                <button class="button button-standart d-none d-lg-inline-block">Заказать звонок</button>
+            </nav>
+            <div class="row">
+                <div class="col-12 col-lg-7 px-0 section-header-col">
+                    <h1 class="text-uppercase">ТЕСТИРОВАНИЕ НА COVID-19 <br> ДОМА ИЛИ В ОФИСЕ</h1>
+                    <div class="section-header_tagline">
+                        <p class="mb-0">Выберите лабораторию, которая сделает ваш анализ!</p>
+                        <p class="mb-0">Забор биоматериала в удобное для Вас время!</p>
+                    </div>
+                    <p class="section-header_price">Стоимость выезда медсестры в Киеве - 200 грн</p>
+                    <button class="button button-first">Вызвать медсестру</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-header-form">
+                <div class="section-header-step ">
+                    <div class="section-header-step_body">
+                        <h3>Выберите адрес и дату</h3>
+                        <p class="section-header-form_tagline">Заполните поля ниже, чтобы мы могли рассчитать для вас
+                            ориентированную стоимость заказа.</p>
+                        <p class="text-center section-header-form_steps">Шаг 1 из 3</p>
+                        <div class="row mb-4">
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                                <div class="row py-3 px-1 px-sm-2 form-group-block dropdown">
+                                    <div class="col-2 d-flex justify-content-center align-items-center">
+                                        <img src="./img/icon-position.png" alt="">
+                                    </div>
+                                    <div class="col-10 px-0 d-flex flex-column justify-content-between">
+                                        <div class="dropdown-toggle d-flex flex-column justify-content-between"id="drop-city" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <label for="drop-city">Выберите город</label>
+                                            <span data-type='city' class="dropdown-info">Киев</span>
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="drop-city">
+                                            <span class="dropdown-item" data-type='city' data-val='kiev' href="#">Киев</span>
+                                            <span class="dropdown-item" data-type='city' data-val='nikolaev' href="#">Николаев</span>
+                                            <span class="dropdown-item" data-type='city' data-val='lvov' href="#">Львов</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="row py-3 px-1 px-sm-2 form-group-block">
+                                    <div class="col-2 d-flex justify-content-center align-items-center">
+                                        <img src="./img/icon-position.png" alt="">
+                                    </div>
+                                    <div class="col-10 px-0 d-flex flex-column justify-content-between">
+                                        <label for="adress">Укажите адрес</label>
+                                        <input type="text" class="w-100 border-0" placeholder="ул. Саксаганского 333"
+                                            id="adress">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                                <div class="row py-3 px-1 px-sm-2 form-group-block dropdown">
+                                    <div class="col-2 d-flex justify-content-center align-items-center">
+                                        <img src="./img/icon-date.png" alt="">
+                                    </div>
+                                    <div class="col-10 px-0 d-flex flex-column justify-content-between">
+                                        <div class="dropdown-toggle d-flex flex-column justify-content-between"id="drop-date" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <label for="drop-date">Выберите дату</label>
+                                            <span data-type='date' class="dropdown-info">01.01.2020</span>
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="drop-date">
+                                            <span class="dropdown-item" data-type='date' data-val='02.01.2020' href="#">02.01.2020</span>
+                                            <span class="dropdown-item" data-type='date' data-val='02.01.2020' href="#">02.01.2020</span>
+                                            <span class="dropdown-item" data-type='date' data-val='02.01.2020' href="#">02.01.2020</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="row py-3 px-1 px-sm-2 form-group-block dropdown">
+                                    <div class="col-2 d-flex justify-content-center align-items-center">
+                                        <img src="./img/icon-date.png" alt="">
+                                    </div>
+                                    <div class="col-10 px-0 d-flex flex-column justify-content-between">
+                                        <div class="dropdown-toggle d-flex flex-column justify-content-between"id="drop-time" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <label for="drop-time">Выберите время</label>
+                                            <span data-type='time' class="dropdown-info">06:00</span>
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="drop-time">
+                                            <span class="dropdown-item" data-type='time' data-val='07:00' href="#">07:00</span>
+                                            <span class="dropdown-item" data-type='time' data-val='07:00' href="#">07:00</span>
+                                            <span class="dropdown-item" data-type='time' data-val='07:00' href="#">07:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-header-step_footer d-flex flex-row justify-content-end">
+                        <p class="mb-0 button_step section-header-step_next" data-btn='next'>Следующий шаг</p>
+                    </div>
+                </div>
+                <div class="section-header-step ">
+                    <div class="section-header-step_body">
+                        <h3>Ориентировочная сумма заказа</h3>
+                        <p class="section-header-form_tagline">Выберите анализ из списка или введите название.</p>
+                        <p class="text-center section-header-form_steps">Шаг 2 из 3</p>
+                        <div class="section-header-step_clinic mb-4">
+                            <div class="row py-3 px-1 px-sm-2 form-group-block dropdown">
+                                <div class="col-2 col-lg-1 px-0 d-flex justify-content-center align-items-center">
+                                    <img src="./img/icon-clinic.png" alt="">
+                                </div>
+                                <div class="col-10 col-lg-11 px-0 d-flex flex-column justify-content-between">
+                                    <div class="dropdown-toggle d-flex flex-column justify-content-between" id="drop-clinic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <label for="drop-clinic">Выберите клинику из списка</label>
+                                        <span data-type='clinc' class="dropdown-info">Название клиники вот такой длинны</span>
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="drop-clinic">
+                                        <span class="dropdown-item" data-type='clinc' data-val='1' href="#">Название клиники вот такой длинны</span>
+                                        <span class="dropdown-item" data-type='clinc' data-val='2' href="#">Название клиники вот такой длинны</span>
+                                        <span class="dropdown-item" data-type='clinc' data-val='3' href="#">Название клиники вот такой длинны</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="section-header-step_analise-wrap"> -->
+                            <!-- <div class="section-header-step_analise row" id='style-1'>
+                                <div class="col-11 px-0 section-header-step_analise-wrap">
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">                              
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8 ">
+                                                <p class="mb-0"><span class="span-type">Клинический анализ крови</span> (автоматизированный формуле +
+                                                    ручная
+                                                    лейкоформулы)</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center ">
+                                                <p class="mb-0 span-type">180 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center ">
+                                                <p class="mb-0 span-type">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0"><span class="span-type">Анализ мочи общий</span> (ЗАС + микроскопия осадка)</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">120 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0">Пакет №346 (Биохимия крови с клиническим анализом крови
+                                                    (автоматизированным формуле) + отчет с описанием лабораторных
+                                                    показателей)
+                                                </p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">880 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">2 дня</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0">Коагулограмма (ПВ,% по Квику, МНО, АЧТВ, Фибриноген, ТВ)</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">310 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0">Пакет №2 (Тиреоидный: ТТГ, Т3 свободный, Т4 свободный)</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">430 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0">Пакет №4.14 (Электролиты крови - калий, натрий, хлор)</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">380 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0">Пакет №4.1 (печеночные пробы + отчет с описанием
+                                                    лабораторных
+                                                    показателей)</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">380 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0">Пакет №4.3 (почечные пробы) 210 1</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">380 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0">Протромбиновое тест (ПЧ,% по Квику, МНО / INR) 120 1</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">380 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0">C-реактивный белок (СРБ) 90 1</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">380 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0">Глюкоза (сыворотка) 110 1</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">380 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8">
+                                                <p class="mb-0">Креатинин 80 1</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">380 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row section-header-step_analise-row">
+                                        <div class="col-1 d-flex flex-column align-items-center justify-content-center">
+                                            <input type="checkbox" name="" id="">
+                                        </div>
+                                        <div class="col-11 row">
+                                            <div class="col-12 col-lg-8 ">
+                                                <p class="mb-0">Вирус кори, антитела IgG 240 4</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center ">
+                                                <p class="mb-0">380 грн</p>
+                                            </div>
+                                            <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center ">
+                                                <p class="mb-0">1 день</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        <!-- </div> -->
+
+                        <div class="row section-header-step_analise-row-2 mb-4">
+                            <div class="col-2 col-md-1 d-flex flex-column align-items-center justify-content-center">
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div class="col-10 col-md-10 row">
+                                <div class="col-12 col-lg-8">
+                                    <p class="mb-0"><span class="span-type">Анализ мочи общий</span> (ЗАС + микроскопия осадка)</p>
+                                </div>
+                                <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center span-type">
+                                    <p class="mb-0">120 грн</p>
+                                </div>
+                                <div class="col-6 col-lg-2 d-flex flex-column justify-content-center text-center span-type">
+                                    <p class="mb-0">1 день</p>
+                                </div>
+                                <!-- <div class="col-4 col-lg-4 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center text-center span-type">
+                                    <p class="mb-2 mb-lg-0">120 грн</p>
+                                    <p class="mb-0">1 день</p>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- <div class="section-header-step_choosed mt-4">
+                            <div class="row section-header-step_choosed-row">
+                                <div class="col-11 row">
+                                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center ">
+                                        <p class="mb-0"><span class="span-type">Вирус кори,</span> антитела IgG 240 4</p>
+                                    </div>
+                                    <div class="col-6 text-center  offset-lg-2 col-lg-2 d-flex flex-column justify-content-center">
+                                        <p class="mb-0 span-type">380 грн</p>
+                                    </div>
+                                    <div class="col-6 text-center col-lg-2 d-flex flex-column justify-content-center ">
+                                        <p class="mb-0 span-type">1 день</p>
+                                    </div>
+                                </div>
+                                <div class="col-1  ">
+                                    <div class="button-close">X</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="section-header-step_price text-right">
+                            <p>Общая стоимость анализов: 1180 грн.</p>
+                            <p>Выезд медсестры: 200 грн.</p>
+                            <p class="section-header-step_all">К оплате: 1380 грн.</p>
+                        </div>
+                    </div>
+                    <div class="section-header-step_footer d-flex flex-column flex-sm-row align-items-center justify-content-between">
+                        <p class="mb-2 mb-sm-0 button_step section-header-step_prev" data-btn='prev'>Предыдущий шаг</p>
+                        <p class="mb-0 button_step section-header-step_next" data-btn='next'>Следующий шаг</p>
+                    </div>
+                </div>
+                <div class="section-header-step ">
+                    <div class="section-header-step_body">
+                        <h3>Введите Ваши данные</h3>
+                        <p class="section-header-form_tagline">Последний шаг! Введите данные для завершения оформления
+                            заявки.</p>
+                        <p class="text-center section-header-form_steps">Шаг 3 из 3</p>
+                        <div class="row mb-4">
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                                <div class="row py-3 px-1 px-sm-2 form-group-block">
+                                    <div class="col-2 d-flex justify-content-center align-items-center">
+                                        <img src="./img/icon-fio.png" alt="">
+                                    </div>
+                                    <div class="col-10 px-0 d-flex flex-column justify-content-between">
+                                        <label for="fio">ФИО</label>
+                                        <input type="text" class="w-100 border-0" placeholder="Иванов Иван Иванович"
+                                            name="" id="fio">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="row py-3 px-1 px-sm-2 form-group-block">
+                                    <div class="col-2 d-flex justify-content-center align-items-center">
+                                        <img src="./img/icon-email.png" alt="">
+                                    </div>
+                                    <div class="col-10 px-0 d-flex flex-column justify-content-between">
+                                        <label for="email">E-mail</label>
+                                        <input type="email" class="w-100 border-0" placeholder="ivan_ivanov@mail.com"
+                                            name="" id="email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                                <div class="row py-3 px-1 px-sm-2 form-group-block">
+                                    <div class="col-2 d-flex justify-content-center align-items-center">
+                                        <img src="./img/icon-form-phone.png" alt="">
+                                    </div>
+                                    <div class="col-10 px-0 d-flex flex-column justify-content-between">
+                                        <label for="phone">Телефон</label>
+                                        <input type="text" class="w-100 border-0" placeholder="+380 ХХ ХХХ ХХ ХХ"
+                                            name="" id="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="row py-3 px-1 px-sm-2 form-group-block">
+                                    <div class="col-2 d-flex justify-content-center align-items-center">
+                                        <img src="./img/icon-fio.png" alt="">
+                                    </div>
+                                    <div class="col-10 px-0 d-flex flex-column justify-content-between">
+                                        <label for="doctor">Направляющий врач</label>
+                                        <input type="text" class="w-100 border-0" placeholder="Петров Петр Петрович"
+                                            name="" id="doctor">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                                <div class="row py-3 px-1 px-sm-2 form-group-block">
+                                    <div class="col-2 d-flex justify-content-center align-items-center">
+                                        <img src="./img/icon-date.png" alt="">
+                                    </div>
+                                    <div class="col-10 px-0 d-flex flex-column justify-content-between">
+                                        <label for="date-step-3">Дата рождения</label>
+                                        <input type="text" class="w-100 border-0" placeholder="дд / мм / гг" name=""
+                                            id="date-step-3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="row py-3 px-1 px-sm-2 form-group-block dropdown">
+                                    <div class="col-2 d-flex justify-content-center align-items-center">
+                                        <img src="./img/icon-sex.png" alt="">
+                                    </div>
+                                    <div class="col-10 px-0 d-flex flex-column justify-content-between">
+                                        <div class="dropdown-toggle d-flex flex-column justify-content-between"id="drop-sex" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <label for="drop-sex">Ваш пол</label>
+                                            <span data-type='sex' class="dropdown-info">мужской</span>
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="drop-sex">
+                                            <span class="dropdown-item" data-type='sex' data-val='male' href="#">мужской</span>
+                                            <span class="dropdown-item" data-type='sex' data-val='female' href="#">женский</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <div class="section-form-textarea">
+                                    <textarea name="" class="border-0 w-100 h-100" id="" cols="30" rows="3"
+                                        placeholder="Оставить комментарий к заявке..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-form-agree d-flex flex-row justify-content-between mx-auto mb-5 ">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <p class="mb-0">Я даю согласие на обработку моих данных</p>
+                        </div>
+                        <div class="text-center">
+                            <button class="button button-second">Оформить он-лайн заявку</button>
+                        </div>
+                    </div>
+                    <div class="section-header-step_footer d-flex flex-row">
+                        <p class="mb-0 button_step section-header-step_prev" data-btn='prev'>Предыдущий шаг</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-about">
+            <!-- <div class="container"> -->
+            <h2 class="text-center justify-content-center text-uppercase"><span>О нашей компании</span></h2>
+            <div class="section-about-row_first">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center py-4">
+                            <p class="mb-0">
+                                <span class="span-name">Компания «КОЛЛАБ» предоставляет современный качественный
+                                    сервис</span> — услугу взятия биоматериала
+                                для исследования на коронавирусную инфекцию (COVID-19) в аккредитованных лабораториях.
+                                Тестирование позволяет определить наличие (либо отсутствие) активной фазы болезни, а
+                                также
+                                антител и иммунитета, который приобретается после перенесения болезни.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="section-about_img">
+                                <img src="./img/about-1.png" class="w-100 h-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-about-row_second">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-block d-lg-none mb-4 mb-sm-5 mb-lg-0">
+                            <p class="mb-0 md-sm-5 mb-lg-0">Наша компания имеет государственную Лицензию на данный вид
+                                услуг и соответствует
+                                всем необходимым стандартам. В нашем штате круглосуточно работает несколько мобильных
+                                бригад
+                                опытных медсестер, которые прошли специальную подготовку и повышение квалификации по
+                                забору
+                                и транспортировке биоматериала для тестирования на COVID-19.</p>
+                        </div>
+                        <div class="col-11 col-sm-8 mt-5 mt-lg-0 offset-sm-2 col-md-6 offset-md-3 offset-lg-0 col-lg-6">
+                            <div class="section-about_img">
+                                <img src="./img/about-2.png" class="w-100 h-100" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-none d-lg-block">
+                            <p class="mb-0">
+                                Наша компания имеет государственную Лицензию на данный вид услуг и соответствует всем
+                                необходимым стандартам. В нашем штате круглосуточно работает несколько мобильных бригад
+                                опытных медсестер, которые прошли специальную подготовку и повышение квалификации по
+                                забору
+                                и транспортировке биоматериала для тестирования на COVID-19.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-about-row_third span-name">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 offset-lg-6">
+                            <p class="mb-5">Выезд медицинского персонала для тестирования на дому или в офисе
+                                осуществляется
+                                по городу Киев. Выезд бригады медсестер для проведения массового (корпоративного)
+                                тестирования возможен по всей территории Украины.</p>
+                            <p class="section-about_sert mb-0 text-center text-lg-left">Смотреть сертификат</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <section class="section-causes">
+            <div class="container">
+                <h2 class="text-center justify-content-center text-uppercase"><span>9 причин заказать <br> услугу у
+                        нас</span></h2>
+                <div class="section-causes_info">
+                    <div class="row" id="accordion">
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingOne">
+                                    <div class="card-img">
+                                        <img src="./img/cause-1.png" alt="">
+                                    </div>
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        УДОБСТВО
+                                    </button>
+                                    <div class="card-btn section-questions_btn-active">
+                                        <img src="./img/arrow_accord.png" alt="">
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Оформление онлайн-заявки 24/7 происходит «в 1 клик» — вам не нужно никуда
+                                        звонить, ничего объяснять или подтверждать.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingTwo">
+                                    <div class="card-img">
+                                        <img src="./img/cause-2.png" alt="">
+                                    </div>
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">
+                                        Доступность
+                                    </button>
+                                    <div class="card-btn section-causes-btn">
+                                        <img src="./img/arrow_accord.png" alt="">
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Оформление онлайн-заявки 24/7 происходит «в 1 клик» — вам не нужно никуда
+                                        звонить, ничего объяснять или подтверждать.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingThree">
+                                    <div class="card-img">
+                                        <img src="./img/cause-3.png" alt="">
+                                    </div>
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="true" aria-controls="collapseThree">
+                                        Точность
+                                    </button>
+                                    <div class="card-btn section-causes-btn">
+                                        <img src="./img/arrow_accord.png" alt="">
+                                    </div>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Оформление онлайн-заявки 24/7 происходит «в 1 клик» — вам не нужно никуда
+                                        звонить, ничего объяснять или подтверждать.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingFour">
+                                    <div class="card-img">
+                                        <img src="./img/cause-4.png" alt="">
+                                    </div>
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="true" aria-controls="collapseFour">
+                                        Анонимность
+                                    </button>
+                                    <div class="card-btn section-questions_btn-active">
+                                        <img src="./img/arrow_accord.png" alt="">
+                                    </div>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Оформление онлайн-заявки 24/7 происходит «в 1 клик» — вам не нужно никуда
+                                        звонить, ничего объяснять или подтверждать.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingFive">
+                                    <div class="card-img">
+                                        <img src="./img/cause-5.png" alt="">
+                                    </div>
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseFive"
+                                        aria-expanded="true" aria-controls="collapseFive">
+                                        Оперативность
+                                    </button>
+                                    <div class="card-btn section-causes-btn">
+                                        <img src="./img/arrow_accord.png" alt="">
+                                    </div>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Оформление онлайн-заявки 24/7 происходит «в 1 клик» — вам не нужно никуда
+                                        звонить, ничего объяснять или подтверждать.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingSix">
+                                    <div class="card-img">
+                                        <img src="./img/cause-6.png" alt="">
+                                    </div>
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseSix"
+                                        aria-expanded="true" aria-controls="collapseSix">
+                                        Безопасность
+                                    </button>
+                                    <div class="card-btn section-causes-btn">
+                                        <img src="./img/arrow_accord.png" alt="">
+                                    </div>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Оформление онлайн-заявки 24/7 происходит «в 1 клик» — вам не нужно никуда
+                                        звонить, ничего объяснять или подтверждать.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingSeven">
+                                    <div class="card-img">
+                                        <img src="./img/cause-7.png" alt="">
+                                    </div>
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseSeven">
+                                        НАДЕЖНОСТЬ
+                                    </button>
+                                    <div class="card-btn section-causes-btn">
+                                        <img src="./img/arrow_accord.png" alt="">
+                                    </div>
+                                </div>
+                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Оформление онлайн-заявки 24/7 происходит «в 1 клик» — вам не нужно никуда
+                                        звонить, ничего объяснять или подтверждать.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingEight">
+                                    <div class="card-img">
+                                        <img src="./img/cause-8.png" alt="">
+                                    </div>
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseEight"
+                                        aria-expanded="true" aria-controls="collapseEight">
+                                        ГАРАНТИЯ
+                                    </button>
+                                    <div class="card-btn section-causes-btn">
+                                        <img src="./img/arrow_accord.png" alt="">
+                                    </div>
+                                </div>
+                                <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Оформление онлайн-заявки 24/7 происходит «в 1 клик» — вам не нужно никуда
+                                        звонить, ничего объяснять или подтверждать.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingNine">
+                                    <div class="card-img">
+                                        <img src="./img/cause-9.png" alt="">
+                                    </div>
+                                    <button class="btn" data-toggle="collapse" data-target="#collapseNine"
+                                        aria-expanded="true" aria-controls="collapseNine">
+                                        ВЫГОДА
+                                    </button>
+                                    <div class="card-btn section-causes-btn">
+                                        <img src="./img/arrow_accord.png" alt="">
+                                    </div>
+                                </div>
+                                <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Оформление онлайн-заявки 24/7 происходит «в 1 клик» — вам не нужно никуда
+                                        звонить, ничего объяснять или подтверждать.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button button-first d-block mx-auto">Вызвать медсестру</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-indication">
+            <div class="container">
+                <h2 class="text-center justify-content-center text-uppercase"><span>Показания к тестированию <br> на
+                        COVID-19</span></h2>
+                <div class="row ">
+                    <div class="col-12 col-lg-6 px-0">
+                        <ul class="section-indication-block section-indication-block_active mb-0">
+                            <li class="mb-3">При симптомах коронавирусной инфекции (повышенная температура тела, сухой
+                                кашель, слабость, одышка, потеря обоняния и возможности различать вкусы, мышечная боль,
+                                заложенность носа и другие типичные признаки ОРВИ).</li>
+                            <li class="mb-3">Для исключения вероятности заражения, если вы контактировали с человеком, у
+                                которого выявлен коронавирус.</li>
+                            <li class="mb-3">Если вы подозреваете, что могли перенести COVID-19 в легкой или скрытой
+                                (бессимптомной) формах, и хотите узнать наличие антител и иммунитета. </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6 px-0">
+                        <ul class="section-indication-block mb-0">
+                            <li class="mb-3">Если вы переболели в 2020 году пневмонией и подозреваете, что это была
+                                коронавирусная инфекция.</li>
+                            <li class="mb-3">Если вы недавно были за границей в странах «красной зоны».</li>
+                            <li class="mb-3">При госпитализации в стационар и перед плановыми операциями.</li>
+                            <li class="mb-3">Перед перелетом или по возвращению в Украину для определенного списка
+                                стран.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-questions">
+            <div class="container">
+                <h2 class="text-center justify-content-center text-uppercase"><span>Часто задаваемые <br> вопросы</span>
+                </h2>
+                <div class="accordion" id="accordion2">
+                    <div class="card">
+                        <div class="card-header px-0 d-flex flex-row justify-content-between" id="questionsOne">
+                            <h4 class="mb-0">
+                                <button class="btn collapsed px-0" type="button" data-toggle="collapse"
+                                    data-target="#questionsOne" aria-expanded="false" aria-controls="questionsOne">
+                                    Какой-то очень важный и интересный вопрос № 1
+                                </button>
+                            </h4>
+                            <div class="section-questions_btn section-questions_btn-active">
+                                <img src="./img/arrow_accord.png" alt="">
+                            </div>
+                        </div>
+                        <div id="questionsOne" class="collapse show" aria-labelledby="questionsOne"
+                            data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+                                на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header px-0 d-flex flex-row justify-content-between" id="questionsTwo">
+                            <h4 class="mb-0">
+                                <button class="btn collapsed px-0" type="button" data-toggle="collapse"
+                                    data-target="#questionsTwo" aria-expanded="false" aria-controls="questionsTwo">
+                                    Какой-то очень важный и интересный вопрос № 2
+                                </button>
+                            </h4>
+                            <div class="section-questions_btn">
+                                <img src="./img/arrow_accord.png" alt="">
+                            </div>
+                        </div>
+                        <div id="questionsTwo" class="collapse" aria-labelledby="questionsTwo"
+                            data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+                                на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header px-0 d-flex flex-row justify-content-between" id="questionsThree">
+                            <h4 class="mb-0">
+                                <button class="btn collapsed px-0" type="button" data-toggle="collapse"
+                                    data-target="#questionsThree" aria-expanded="false" aria-controls="questionsThree">
+                                    Какой-то очень важный и интересный вопрос № 3
+                                </button>
+                            </h4>
+                            <div class="section-questions_btn">
+                                <img src="./img/arrow_accord.png" alt="">
+                            </div>
+                        </div>
+                        <div id="questionsThree" class="collapse" aria-labelledby="questionsThree"
+                            data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+                                на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header px-0 d-flex flex-row justify-content-between" id="questionsFour">
+                            <h4 class="mb-0">
+                                <button class="btn collapsed px-0" type="button" data-toggle="collapse"
+                                    data-target="#questionsFour" aria-expanded="false" aria-controls="questionsFour">
+                                    Какой-то очень важный и интересный вопрос № 4
+                                </button>
+                            </h4>
+                            <div class="section-questions_btn">
+                                <img src="./img/arrow_accord.png" alt="">
+                            </div>
+                        </div>
+                        <div id="questionsFour" class="collapse" aria-labelledby="questionsFour"
+                            data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+                                на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header px-0 d-flex flex-row justify-content-between" id="questionsFive">
+                            <h4 class="mb-0">
+                                <button class="btn collapsed px-0" type="button" data-toggle="collapse"
+                                    data-target="#questionsFive" aria-expanded="false" aria-controls="questionsFive">
+                                    Какой-то очень важный и интересный вопрос № 5
+                                </button>
+                            </h4>
+                            <div class="section-questions_btn">
+                                <img src="./img/arrow_accord.png" alt="">
+                            </div>
+                        </div>
+                        <div id="questionsFive" class="collapse" aria-labelledby="questionsFive"
+                            data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+                                на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header px-0 d-flex flex-row justify-content-between" id="questionsSix">
+                            <h4 class="mb-0">
+                                <button class="btn collapsed px-0" type="button" data-toggle="collapse"
+                                    data-target="#questionsSix" aria-expanded="false" aria-controls="questionsSix">
+                                    Какой-то очень важный и интересный вопрос № 6
+                                </button>
+                            </h4>
+                            <div class="section-questions_btn">
+                                <img src="./img/arrow_accord.png" alt="">
+                            </div>
+                        </div>
+                        <div id="questionsSix" class="collapse" aria-labelledby="questionsSix"
+                            data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+                                на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header px-0 d-flex flex-row justify-content-between" id="questionsSeven">
+                            <h4 class="mb-0">
+                                <button class="btn collapsed px-0" type="button" data-toggle="collapse"
+                                    data-target="#questionsSeven" aria-expanded="false" aria-controls="questionsSeven">
+                                    Какой-то очень важный и интересный вопрос № 7
+                                </button>
+                            </h4>
+                            <div class="section-questions_btn">
+                                <img src="./img/arrow_accord.png" alt="">
+                            </div>
+                        </div>
+                        <div id="questionsSeven" class="collapse" aria-labelledby="questionsSeven"
+                            data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+                                на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header px-0 d-flex flex-row justify-content-between" id="questionsEight">
+                            <h4 class="mb-0">
+                                <button class="btn collapsed px-0" type="button" data-toggle="collapse"
+                                    data-target="#questionsEight" aria-expanded="false" aria-controls="questionsEight">
+                                    Какой-то очень важный и интересный вопрос № 8
+                                </button>
+                            </h4>
+                            <div class="section-questions_btn">
+                                <img src="./img/arrow_accord.png" alt="">
+                            </div>
+                        </div>
+                        <div id="questionsEight" class="collapse" aria-labelledby="questionsEight"
+                            data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+                                на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header px-0 d-flex flex-row justify-content-between" id="questionsNine">
+                            <h4 class="mb-0">
+                                <button class="btn collapsed px-0" type="button" data-toggle="collapse"
+                                    data-target="#questionsNine" aria-expanded="false" aria-controls="questionsNine">
+                                    Какой-то очень важный и интересный вопрос № 9
+                                </button>
+                            </h4>
+                            <div class="section-questions_btn">
+                                <img src="./img/arrow_accord.png" alt="">
+                            </div>
+                        </div>
+                        <div id="questionsNine" class="collapse" aria-labelledby="questionsNine"
+                            data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+                                на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header px-0 d-flex flex-row justify-content-between" id="questionsTen">
+                            <h4 class="mb-0">
+                                <button class="btn collapsed px-0" type="button" data-toggle="collapse"
+                                    data-target="#questionsTen" aria-expanded="false" aria-controls="questionsTen">
+                                    Какой-то очень важный и интересный вопрос № 10
+                                </button>
+                            </h4>
+                            <div class="section-questions_btn">
+                                <img src="./img/arrow_accord.png" alt="">
+                            </div>
+                        </div>
+                        <div id="questionsTen" class="collapse" aria-labelledby="questionsTen"
+                            data-parent="#accordion2">
+                            <div class="card-body">
+                                Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+                                на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-reviews">
+            <h2 class="text-center justify-content-center text-uppercase"><span>Отзывы <br> наших клиентов</span></h2>
+            <div class="section-reviews-slider-control d-flex flex-column flex-sm-row justify-content-sm-between">
+                <div
+                    class="section-reviews-slider_arrow section-reviews-slider_disabled section-reviews-slider_prev mb-3 mb-sm-0">
+                    <img src="./img/arror.png" alt=""></div>
+                <div class="section-reviews-slider_arrow section-reviews-slider_next"><img src="./img/arror.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-container py-5 section-reviews-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="section-reviews-slide">
+                            <div class="row align-items-center">
+                                <div class="col-2 col-md-1 col-lg-2 px-0">
+                                    <img src="./img/icon-user.png" alt="">
+                                </div>
+                                <div class="col-10 col-md-11 col-lg-10 d-flex flex-column">
+                                    <span>Валентина,</span>
+                                    <span>Киев</span>
+                                </div>
+                            </div>
+                            <div class="section-reviews_text">
+                                <p>Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                    трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н.
+                                    э. на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                                    Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из
+                                    философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в
+                                    45 году до н. э. на латинском языке, обнаружение сходства атрибутируется Ричарду
+                                    МакКлинтоку.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="section-reviews-slide">
+                            <div class="row align-items-center">
+                                <div class="col-2 px-0">
+                                    <img src="./img/icon-user.png" alt="">
+                                </div>
+                                <div class="col-10 d-flex flex-column">
+                                    <span>Валентина,</span>
+                                    <span>Киев</span>
+                                </div>
+                            </div>
+                            <div class="section-reviews_text">
+                                <p>Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                    трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н.
+                                    э. на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                                    Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из
+                                    философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в
+                                    45 году до н. э. на латинском языке, обнаружение сходства атрибутируется Ричарду
+                                    МакКлинтоку.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="section-reviews-slide">
+                            <div class="row align-items-center">
+                                <div class="col-2 px-0">
+                                    <img src="./img/icon-user.png" alt="">
+                                </div>
+                                <div class="col-10 d-flex flex-column">
+                                    <span>Валентина,</span>
+                                    <span>Киев</span>
+                                </div>
+                            </div>
+                            <div class="section-reviews_text">
+                                <p>Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                    трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н.
+                                    э. на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                                    Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из
+                                    философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в
+                                    45 году до н. э. на латинском языке, обнаружение сходства атрибутируется Ричарду
+                                    МакКлинтоку.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="section-reviews-slide">
+                            <div class="row align-items-center">
+                                <div class="col-2 px-0">
+                                    <img src="./img/icon-user.png" alt="">
+                                </div>
+                                <div class="col-10 d-flex flex-column">
+                                    <span>Валентина,</span>
+                                    <span>Киев</span>
+                                </div>
+                            </div>
+                            <div class="section-reviews_text">
+                                <p>Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                    трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н.
+                                    э. на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                                    Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из
+                                    философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в
+                                    45 году до н. э. на латинском языке, обнаружение сходства атрибутируется Ричарду
+                                    МакКлинтоку.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="section-reviews-slide">
+                            <div class="row align-items-center">
+                                <div class="col-2 px-0">
+                                    <img src="./img/icon-user.png" alt="">
+                                </div>
+                                <div class="col-10 d-flex flex-column">
+                                    <span>Валентина,</span>
+                                    <span>Киев</span>
+                                </div>
+                            </div>
+                            <div class="section-reviews_text">
+                                <p>Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                    трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н.
+                                    э. на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                                    Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из
+                                    философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в
+                                    45 году до н. э. на латинском языке, обнаружение сходства атрибутируется Ричарду
+                                    МакКлинтоку.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="section-reviews-slide">
+                            <div class="row align-items-center">
+                                <div class="col-2 px-0">
+                                    <img src="./img/icon-user.png" alt="">
+                                </div>
+                                <div class="col-10 d-flex flex-column">
+                                    <span>Валентина,</span>
+                                    <span>Киев</span>
+                                </div>
+                            </div>
+                            <div class="section-reviews_text">
+                                <p>Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                    трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н.
+                                    э. на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                                    Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из
+                                    философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в
+                                    45 году до н. э. на латинском языке, обнаружение сходства атрибутируется Ричарду
+                                    МакКлинтоку.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="section-reviews-slide">
+                            <div class="row align-items-center">
+                                <div class="col-2 px-0">
+                                    <img src="./img/icon-user.png" alt="">
+                                </div>
+                                <div class="col-10 d-flex flex-column">
+                                    <span>Валентина,</span>
+                                    <span>Киев</span>
+                                </div>
+                            </div>
+                            <div class="section-reviews_text">
+                                <p>Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                    трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н.
+                                    э. на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                                    Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из
+                                    философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в
+                                    45 году до н. э. на латинском языке, обнаружение сходства атрибутируется Ричарду
+                                    МакКлинтоку.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="section-reviews-slide">
+                            <div class="row align-items-center">
+                                <div class="col-2 px-0">
+                                    <img src="./img/icon-user.png" alt="">
+                                </div>
+                                <div class="col-10 d-flex flex-column">
+                                    <span>Валентина,</span>
+                                    <span>Киев</span>
+                                </div>
+                            </div>
+                            <div class="section-reviews_text">
+                                <p>Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                    трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н.
+                                    э. на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                                    Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из
+                                    философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в
+                                    45 году до н. э. на латинском языке, обнаружение сходства атрибутируется Ричарду
+                                    МакКлинтоку.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="section-reviews-slide">
+                            <div class="row align-items-center">
+                                <div class="col-2 px-0">
+                                    <img src="./img/icon-user.png" alt="">
+                                </div>
+                                <div class="col-10 d-flex flex-column">
+                                    <span>Валентина,</span>
+                                    <span>Киев</span>
+                                </div>
+                            </div>
+                            <div class="section-reviews_text">
+                                <p>Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из философского
+                                    трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н.
+                                    э. на латинском языке, обнаружение сходства атрибутируется Ричарду МакКлинтоку.
+                                    Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из
+                                    философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в
+                                    45 году до н. э. на латинском языке, обнаружение сходства атрибутируется Ричарду
+                                    МакКлинтоку.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+                    <button class="button button-first mb-4 mb-lg-0">Читать все отзывы</button>
+                    <button class="button button-second">Написать отзыв</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-contacts">
+            <div class="container">
+                <h2 class="text-uppercase text-center justify-content-center section-contacts-header_mobile d-lg-none">
+                    <span>Контакты</span></h2>
+                <div class="row section-contacts-row">
+                    <div class="col-12 col-lg-6 px-0">
+                        <div class="section-contacts-form">
+                            <h3 class="text-uppercase text-center">Заполните форму!</h3>
+                            <p class="section-contacts-form_tagline text-center">Заполните поля ниже и мы свяжемся с
+                                Вами в ближайшее время!</p>
+                            <div class="row py-3 px-1 px-sm-2 form-group-block mb-4">
+                                <div class="col-2 d-flex justify-content-center align-items-center">
+                                    <img src="./img/icon-name.png" alt="">
+                                </div>
+                                <div class="col-10 d-flex flex-column justify-content-between">
+                                    <label for="form-contacts_name">Введите Ваше имя</label>
+                                    <div class="form-validate">
+                                        <span class="span-validate-inp">
+                                            <input type="text" name="" class='w-100 border-0' id="form-contacts_name"
+                                            placeholder="Иван">
+                                        </span>
+                                        <span class="span-validate">Обязательное поле</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-3 px-1 px-sm-2 form-group-block mb-4">
+                                <div class="col-2 d-flex justify-content-center align-items-center">
+                                    <img src="./img/icon-form-phone.png" alt="">
+                                </div>
+                                <div class="col-10 d-flex flex-column justify-content-between">
+                                    <label for="form-contacts_phone">Введите номер телефона</label>
+                                    <input type="text" name="" class="w-100 border-0" id="form-contacts_phone"
+                                        placeholder="+38 ххх ххх хх хх">
+                                </div>
+                            </div>
+                            <button class="button button-first w-100">Отправить заявку</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 px-0 d-lg-flex flex-lg-column justify-content-lg-between">
+                        <div class="section-contacts-info">
+                            <h2 class="text-uppercase d-none d-lg-block section-contacts-header_desctop">
+                                <span>Контакты</span></h2>
+                            <ul class="mb-0 d-flex d-lg-block flex-column align-items-center">
+                                <li class="d-flex flex-column">
+                                    <span>Телефон</span>
+                                    <span><a href="tel:+381234567890">+38 123 456 78 90</a></span>
+                                </li>
+                                <li class="d-flex flex-column">
+                                    <span>Телефон</span>
+                                    <span><a href="tel:+381234567890">+38 123 456 78 90</a></span>
+                                </li>
+                                <li class="d-flex flex-column">
+                                    <span>Email</span>
+                                    <span class="form-mail"><a
+                                            href="mailto:ivan_ivanov@mail.com">ivan_ivanov@mail.com</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="section-footer ">
+        <p class="mb-0 text-center">Copyright © 2020 Callab</p>
+    </footer>
+</body>
+
+</html>

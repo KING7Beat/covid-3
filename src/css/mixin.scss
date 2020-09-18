@@ -1,0 +1,10 @@
+@mixin psevdoAfter ($content, $width, $height) {
+    display: block;
+    position: absolute;
+    content: $content;
+    width: $width;
+    height: $height;
+}
+@mixin calcVA($size, $VA) {
+    letter-spacing: calc(($size * $VA)/1000);
+}
